@@ -134,8 +134,9 @@ span::selection {
 }
 
 /* Media Queries */
-@media only screen and (max-width: 767px) {
-  body {
-    background-image: url(images/background-mobile.jpg);
-  }
+/* Smartphones (portrait and landscape) */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    body {
+        background-image: url(images/background-mobile.jpg);
+    }
 }
