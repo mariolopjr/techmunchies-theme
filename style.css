@@ -1,0 +1,70 @@
+/*
+    Theme Name: techmunchies
+    Theme URI: https://techmunchies.net/
+    Description: techmunchies site theme
+    Author: Mario Lopez
+    Author URI: https://techmunchies.net
+    Version: 1.0
+    .
+    All rights reserved.
+    .
+*/
+body {
+    background-image: url(images/background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #2e3234;
+    font-family: 'Quicksand', Helvetica, sans-serif;
+    margin: 0;
+    width: 100vw;
+}
+p::selection {
+  background: #92a7b1;
+}
+.content {
+    top: 10vh;
+    padding: 0 10vw;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+.content > p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 5px;
+    position: relative;
+}
+.content > p:first-of-type {
+    color: #fff;
+    letter-spacing: 2px;
+    position: relative;
+    text-transform: uppercase;
+}
+.site-name {
+    margin: 0 auto 10px;
+    max-width: 439px;
+    position: relative;
+}
+.footer {
+    bottom: 15px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    position: absolute;
+    right: 15px;
+}
+.footer > p {
+    letter-spacing: 1.5px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 767px) {
+  body {
+    background-image: url(images/background-mobile.jpg);
+  }
+}
