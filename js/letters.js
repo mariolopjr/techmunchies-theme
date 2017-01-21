@@ -1,7 +1,14 @@
+/*
+ * Created by: codrops
+ * Link: https://github.com/codrops/AnimatedLetters
+ * 
+ * Edited By: Mario Lopez <mario@techmunchies.net>
+ * Edited to use HTML5 attributes instead of text to avoid text flash
+*/
+
 function Letters(el, options){
     this.el = el;
-    this.text = el.innerHTML.toLowerCase();
-    el.innerHTML = '<span style="position: absolute; visibility: hidden;">'+ this.text +'</span>';
+    this.text = el.getAttribute('data-letters').toLowerCase();
     this.init(options);
 }
 

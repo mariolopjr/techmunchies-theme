@@ -1,8 +1,9 @@
 <?=get_header()?>
 <div class="content">
-    <div class="site-name">techmunchies</div>
+    <div class="site-name" data-letters="techmunchies"></div>
     <p>Traverse New Roads</p>
     <p>Coming Soon, A Development &amp; Design Company</p>
+    <!--<?=do_shortcode('[contact-form-7 id="72" title="Contact Me"]')?>-->
 </div>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>

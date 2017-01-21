@@ -3,8 +3,6 @@
     <p><?=bloginfo('name')?></p>
 </div>
 
-</div>
- 
 <?=wp_footer()?>
  
 </body>

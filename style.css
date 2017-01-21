@@ -44,6 +44,7 @@ p::selection {
     text-transform: uppercase;
 }
 .site-name {
+    height: 86px;
     margin: 0 auto 10px;
     max-width: 439px;
     position: relative;
