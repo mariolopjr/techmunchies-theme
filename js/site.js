@@ -4,8 +4,6 @@ $(() => {
     // Set the appropriate site to the width of the device
     const size = $(window).width() < 500 ? 70 : 80;
 
-    console.log($(window).width() + "," + size);
-
     // Options for animation
     var options = {
         size: size,

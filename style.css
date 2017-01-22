@@ -14,12 +14,15 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     background-color: #2e3234;
     font-family: 'Quicksand', Helvetica, sans-serif;
     margin: 0;
-    width: 100vw;
-    height: 95vh;
+    width: 100%;
+    height: 100%;
 }
 a::selection,
 p::selection,
@@ -138,6 +141,7 @@ span::selection {
 @media only screen and (min-device-width : 320px) and (max-device-width : 500px) {
     body {
         background-image: url(images/background-mobile.jpg);
+        height: 100vh;
     }
     .site-name {
         margin-bottom: 0px;
