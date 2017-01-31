@@ -1,0 +1,28 @@
+version: '2'
+services:
+  wordpress:
+    image: visiblevc/wordpress:latest
+    ports:
+      - 8080:80
+      - 443:443
+    volumes:
+      - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
+      - ./wp-content/uploads:/app/wp-content/uploads
+      - ./techmunchies:/app/wp-content/themes/techmunchies
+    environment:
+      DB_HOST: db
+      DB_NAME: wordpress
+      DB_PASS: root
+      PLUGINS: >-
+      THEMES: >-
+        [local]techmunchies
+      PERMALINKS: /%year%/%monthnum%/%day%/%postname%/
+      WP_DEBUG: 'true'
+  db:
+    image: mysql:5.7
+    volumes:
+      - ./data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+volumes:
+  data: {}
