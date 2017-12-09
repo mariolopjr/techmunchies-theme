@@ -98,50 +98,21 @@ nav.navbar-light {
   }
 }
 
-.blog .footer {
-  background-color: $footer-background-color;
-  padding: 3rem 1.5rem 1.5rem;
-}
+.footer {
+  color: $footer-text-color-home;
+  font-size: .6rem;
+  font-weight: 400;
 
-.home.hero {
-
-  nav a {
-    color: $nav-text-color-home;
-
-    &:active,
-    &:focus,
-    &:hover {
-      color: $nav-text-color-home;
-    }
-  }
-
-  > .hero-body > .container {
-    margin-bottom: 60vh;
-
-  }
-
-  .title,
-  .subtitle {
-    color: $home-hero-color;
-    font-size: 16px;
-    font-weight: 200;
-  }
-
-  .title {
+  > p {
+    display: inline-block;
     letter-spacing: 2px;
     text-transform: uppercase;
   }
+}
 
-  > .hero-foot {
-    color: $footer-text-color-home;
-    font-size: .6rem;
-    font-weight: 400;
-
-    > p {
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-    }
-  }
+.blog .footer {
+  background-color: $footer-background-color;
+  padding: 3rem 1.5rem 1.5rem;
 }
 
 // Home Background Picture Info Container

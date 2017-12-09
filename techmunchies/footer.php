@@ -1,4 +1,4 @@
-<div class="footer">
+<div class="footer fixed-bottom text-center">
     <p>Copyright © <?=date('Y')?></p>
     <p><?=bloginfo('name')?></p>
 </div>
