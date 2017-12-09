@@ -2,9 +2,9 @@
     <p>Copyright © <?=date('Y')?></p>
     <p><?=bloginfo('name')?></p>
 </div>
-<div class="pic-info">
-    <span class="info-container">i</span>
-    <div class="info-popover">
+<div class="background-info">
+    <span class="background-container">i</span>
+    <div class="background-popover">
         <span class="label">Photographer</span>
         <span class="answer">Tim Trad</span>
         <span class="label">Location</span>

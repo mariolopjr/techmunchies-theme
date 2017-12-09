@@ -18,3 +18,8 @@ Thumbs.db
 data/*
 wp-content/*
 !wp-content/themes/
+style.css
+style.css.map
+
+# Node
+node_modules

@@ -1,0 +1,237 @@
+/*
+    Theme Name: techmunchies
+    Theme URI: https://techmunchies.net/
+    Description: techmunchies site theme
+    Author: Mario Lopez
+    Author URI: https://techmunchies.net
+    Version: 1.0
+
+    All rights reserved.
+
+*/
+
+@import 'variables';
+
+body {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: $body-bg;
+    font-family: $font-family-sans-serif;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+
+    .webp & {
+      background-image: url('images/background.webp');
+    }
+
+    .no-webp & {
+      background-image: url('images/background.jpg');
+    }
+
+    .no-js & {
+      background-image: url('images/background.jpg');
+    }
+}
+
+*::selection {
+  background: #92a7b1;
+}
+
+.content {
+  top: 10vh;
+  padding: 0 10vw;
+  position: relative;
+  text-align: center;
+  width: 100%;
+
+  .title,
+  .subtitle {
+    color: $home-hero-color;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 20px;
+  }
+
+  .title {
+    letter-spacing: 2px;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+}
+
+nav.navbar-light {
+  margin: 0 2rem;
+  text-transform: lowercase;
+
+  .navbar-brand {
+    color: $nav-text-color-home;
+    font-size: .9rem;
+    letter-spacing: 2px;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $nav-text-color-home-hover;
+    }
+  }
+
+  .navbar-nav {
+    .nav-link {
+      color: $nav-text-color-home;
+      font-size: .8rem;
+      letter-spacing: 1.7px;
+
+      &:active,
+      &:focus,
+      &:hover {
+        color: $nav-text-color-home-hover;
+      }
+    }
+
+    .active .nav-link {
+      color: $nav-text-color-home;
+      border-bottom: 2px solid #2cd4d9;
+    }
+  }
+}
+
+.blog .footer {
+  background-color: $footer-background-color;
+  padding: 3rem 1.5rem 1.5rem;
+}
+
+.home.hero {
+
+  nav a {
+    color: $nav-text-color-home;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $nav-text-color-home;
+    }
+  }
+
+  > .hero-body > .container {
+    margin-bottom: 60vh;
+
+  }
+
+  .title,
+  .subtitle {
+    color: $home-hero-color;
+    font-size: 16px;
+    font-weight: 200;
+  }
+
+  .title {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  > .hero-foot {
+    color: $footer-text-color-home;
+    font-size: .6rem;
+    font-weight: 400;
+
+    > p {
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+// Home Background Picture Info Container
+.background-info {
+  bottom: 15px;
+  left: 15px;
+  position: absolute;
+}
+
+.background-container {
+  background-color: $home-background-container;
+  border-radius: 16px;
+  color: $home-background-text;
+  cursor: default;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+  text-align: center;
+  width: 30px;
+
+  &:hover {
+    background-color: $home-background-container-hover;
+  }
+}
+
+.background-popover {
+  background-color: $home-background-popover;
+  border-radius: 3px;
+  bottom: 38px;
+  color: $home-background-popover-text;
+  left: 80px;
+  opacity: 0;
+  padding: 3px 8px;
+  position: absolute;
+  text-align: left;
+  transform: translateX(-50%);
+  transition: opacity .2s ease-in-out;
+  visibility: hidden;
+  white-space: nowrap;
+
+  &-visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  > span {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  > .label {
+    color: $home-background-popover-label;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    line-height: 18px;
+    margin: 5px 3px 0;
+    text-transform: uppercase;
+  }
+
+  > .answer {
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0 3px 5px;
+  }
+
+  a {
+    color: $home-background-popover-a;
+
+    &:hover {
+      color: $home-background-popover-a-hover;
+      text-decoration: none;
+    }
+  }
+}
+
+// Post Snippets
+.post-snippet-container {
+  margin: 4rem auto;
+  max-width: 42rem;
+
+  .snippet {
+    .title {
+      margin-bottom: .7rem;
+    }
+
+    .excerpt {
+      margin-bottom: 1rem;
+    }
+  }
+}

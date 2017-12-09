@@ -1,14 +1,32 @@
 <?=get_header()?>
+
+<nav class="navbar navbar-expand-sm navbar-light" role="navigation">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+  <a class="navbar-brand" href="<?=bloginfo('url')?>"><?=bloginfo('name')?></a>
+  <?php
+    wp_nav_menu( array(
+        'menu' => 'main-menu',
+        'theme_location'    => 'primary',
+        'depth'             => 2,
+        'container'         => 'div',
+        'container_class'   => 'collapse navbar-collapse',
+        'container_id'      => 'main-menu',
+        'menu_class'        => 'navbar-nav ml-auto',
+        'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+        'walker'            => new WP_Bootstrap_Navwalker())
+    );
+  ?>
+</nav>
+
 <div class="content">
-    <div class="site-name" data-letters="techmunchies"></div>
-    <p>Traverse New Roads</p>
-    <p>Coming Soon, A Development &amp; Design Company</p>
+    <h1 class="title">Traverse New Roads</h1>
+    <h2 class="subtitle">A Development &amp; Design Company</h2>
     <!--<?=do_shortcode('[contact-form-7 id="72" title="Contact Me"]')?>-->
 </div>
-<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 <script src="https://use.fontawesome.com/ee26ed5786.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/segment-js/1.0.8/segment.min.js" integrity="sha256-YoxPyNrFgtt/RkvUUU9rKTG7y68/DkDRUvgd1Hus4qY=" crossorigin="anonymous"></script>
-<script type="text/javascript">$crisp=[];CRISP_WEBSITE_ID="2e2ea482-b7b4-4c32-976d-874a3efac439";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.im/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 <?=get_footer()?>
