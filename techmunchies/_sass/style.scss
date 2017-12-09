@@ -23,15 +23,15 @@ body {
     width: 100%;
     height: 100%;
 
-    .webp & {
+    .webp &.home {
       background-image: url('images/background.webp');
     }
 
-    .no-webp & {
+    .no-webp &.home {
       background-image: url('images/background.jpg');
     }
 
-    .no-js & {
+    .no-js &.home {
       background-image: url('images/background.jpg');
     }
 }

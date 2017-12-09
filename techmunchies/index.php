@@ -1,5 +1,6 @@
 <?=get_header()?>
 
+<body class="home">
 <nav class="navbar navbar-expand-sm navbar-light" role="navigation">
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
