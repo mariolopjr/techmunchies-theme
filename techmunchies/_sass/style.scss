@@ -71,6 +71,10 @@ nav.navbar-light {
     font-size: .9rem;
     letter-spacing: 2px;
 
+    .blog & {
+      color: #7a7a7a;
+    }
+
     &:active,
     &:focus,
     &:hover {
@@ -84,6 +88,10 @@ nav.navbar-light {
       font-size: .8rem;
       letter-spacing: 1.7px;
 
+      .blog & {
+        color: #7a7a7a;
+      }
+
       &:active,
       &:focus,
       &:hover {
@@ -94,10 +102,15 @@ nav.navbar-light {
     .active .nav-link {
       color: $nav-text-color-home;
       border-bottom: 2px solid #2cd4d9;
+
+      .blog & {
+        color: #7a7a7a;
+      }
     }
   }
 }
 
+// Footer
 .footer {
   color: $footer-text-color-home;
   font-size: .6rem;
@@ -108,11 +121,10 @@ nav.navbar-light {
     letter-spacing: 2px;
     text-transform: uppercase;
   }
-}
 
-.blog .footer {
-  background-color: $footer-background-color;
-  padding: 3rem 1.5rem 1.5rem;
+  .blog & {
+    color: #7a7a7a;
+  }
 }
 
 // Home Background Picture Info Container
