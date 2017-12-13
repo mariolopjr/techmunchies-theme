@@ -225,6 +225,11 @@ nav.navbar-light {
     position: relative;
     top: 75px;
 
+    article {
+      margin: 0 auto;
+      max-width: 800px;
+    }
+
     .title {
       display: inline-block;
       font-size: 2.5rem;
