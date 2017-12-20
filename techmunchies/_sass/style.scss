@@ -216,6 +216,26 @@ nav.navbar-light {
     margin-bottom: 15px;
   }
 
+  .card {
+    transition: .3s;
+    backface-visibility: hidden;
+
+    .card-img-top {
+      transition: opacity .2s ease-in-out;
+    }
+
+    &:hover {
+      transform: scale(1.015);
+      box-shadow: 0 10px 50px -5px rgba(0, 0, 0, .15);
+      transition: .3s ease-in-out;
+      backface-visibility: hidden;
+
+      .card-img-top {
+        opacity: .7;
+      }
+    }
+  }
+
   .meta {
     background-color: #fff;
     font-size: 0.8rem;
@@ -234,8 +254,13 @@ nav.navbar-light {
       max-width: 800px;
     }
 
+    .card-title {
+      font-size: 2rem;
+      font-weight: 300;
+      margin-bottom: 0;
+    }
+
     .title {
-      display: inline-block;
       font-size: 2.5rem;
       font-weight: 300;
 
@@ -252,6 +277,10 @@ nav.navbar-light {
         transform: scaleX(1);
       }
     }
+  }
+
+  .card-footer {
+    border-top: none;
   }
 }
 .post-snippet-container {
