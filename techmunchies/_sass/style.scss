@@ -212,8 +212,12 @@ nav.navbar-light {
     text-decoration: none;
   }
 
+  .card-deck {
+    margin-bottom: 15px;
+  }
+
   .meta {
-    color: #ccc;
+    background-color: #fff;
     font-size: 0.8rem;
     font-weight: 200;
     text-transform: lowercase;

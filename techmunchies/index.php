@@ -14,9 +14,8 @@
           <img class="card-img-top" src="http://via.placeholder.com/350x200" alt="Card image cap">
           <div class="card-body">
             <h4 class="card-title"><a href="<?=the_permalink()?>"><?=the_title()?></a></h4>
-            <p class="card-text"><?=the_excerpt()?></p>
           </div>
-          <div class="card-footer">
+          <div class="card-footer meta">
             <small class="text-muted">
               <?php if ( ! empty( $categories = get_the_category() ) ) : ?>
                 <?='<a href="' . esc_url( get_category_link( $categories[0]->term_id ) ) . '">' . esc_html( $categories[0]->name ) . '</a>'?>
@@ -24,7 +23,7 @@
             </small>
             |
             <small class="text-muted">
-              5 MIN READ
+              <?=bm_estimated_reading_time()?>
             </small>
           </div>
         </div>
